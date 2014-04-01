@@ -4,15 +4,15 @@
     <title>Snake</title>
 </head>
 <body>
-    <canvas width="600" height="400"></canvas>
+    <center><canvas width="600" height="400"></canvas></center>
 		<script src="inherits.js"></script>
     <script src="keymaster.js"></script>
 		<script src="snake.js"></script>
+    <script src="text.js"></script>
 		<script src="game.js"></script>
-		<script src="board.js"></script>
     <script>
         var canvas = document.getElementsByTagName("canvas")[0];
-        var newGame = new this.Snake.Game(canvas,180);
+        var newGame = new this.Snake.Game(canvas);
         newGame.start();
     </script>
 </body>
